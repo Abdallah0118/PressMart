@@ -1,0 +1,205 @@
+:root {
+  --color-brown: #9e7856;
+  --color-secondary: #f8f8f8;
+  --color-primary: #059473;
+  --color-text: #545454;
+  --color-accent: #212121;
+}
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background-color: var(--color-primary);
+}
+.navbar {
+  min-height: 60px;
+  padding-top: 20px;
+}
+.btn-buy {
+  background-color: white;
+  color: var(--color-primary);
+  font-weight: 600;
+  padding: 12px 20px;
+}
+.btn-buy:hover {
+  background-color: var(--color-brown);
+  color: white;
+}
+.navbar-brand {
+  font-size: 2em;
+  font-weight: 800;
+  color: white;
+}
+.navbar-brand:hover {
+  color: var(--color-text);
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: var(--color-text);
+}
+/* landing  */
+
+.landing h1 {
+  margin: 100px 0;
+  color: white;
+  font-size: 3em;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 768px) {
+  .landing h1 {
+    font-size: 1.5em;
+  }
+}
+/* landing  */
+
+/* separete  */
+.separete {
+  margin: 50px auto;
+}
+.separete h2 {
+  color: var(--color-primary);
+  font-size: 4em;
+  font-weight: bold;
+}
+.separete h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.separete p {
+  color: var(--color-text);
+  line-height: 2em;
+  max-width: 80%;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* separete  */
+/* cards  */
+
+.productImg {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  bottom: 0;
+}
+.productImg:hover {
+  bottom: 10px;
+}
+/* cards  */
+/* row sections  */
+.rowSection {
+  background-color: white;
+}
+.rowSection h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+}
+.rowSection h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+  width: 15%;
+  background-color: var(--color-primary);
+  border-radius: 3px;
+}
+.rowSection p {
+  color: var(--color-text);
+  line-height: 2em;
+  max-width: 80%;
+  font-weight: 400;
+}
+/* row sections  */
+/* special Row  */
+.specialRow h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+}
+.specialRow h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  width: 10%;
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.specialRow p {
+  color: var(--color-text);
+  line-height: 2em;
+  font-weight: 400;
+}
+/* special Row  */
+/* keys  */
+#keys div div div {
+  padding: 20px 0;
+  border-radius: 15px;
+  background-color: white;
+}
+.icon {
+  color: var(--color-primary);
+  font-size: 800;
+  height: 4rem;
+}
+#keys p {
+  color: var(--color-text);
+  width: 90%;
+  margin: 0 auto;
+}
+/* keys  */
+/* help section  */
+
+#help h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+#help p {
+  color: var(--color-text);
+  font-size: 0.75rem;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 2em;
+}
+#help h5 {
+  line-height: 2em;
+  font-size: 15px;
+}
+/* help section  */
+footer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--color-primary);
+}
+footer h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+
+footer p {
+  color: white;
+  font-size: 0.75rem;
+  line-height: 2em;
+}
